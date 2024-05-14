@@ -21,9 +21,9 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'templates/index.html'));
 });
 
-app.get('/games/tic-tac-toe', (req, res) => {
-    res.sendFile(path.join(__dirname, 'templates/games/tic-tac-toe.html'));
-});
+// app.get('/games/morpion', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'templates/games/morpion.html'));
+// });
 
 http.listen(port, () => {
     console.log(`Listening on http://localhost:${port}/`);
